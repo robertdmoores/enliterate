@@ -1,8 +1,11 @@
 ﻿:root {
+    --background-color: #000000;
+    --background-color-30: rgba(0, 0, 0, 0.3);
     --titling-font: 'Open Sans', sans-serif;
-    --title-color: #733f34;
+    --title-color: #ffffff;
+    --title-color-30: rgba(255, 255, 255, 0.3);
     --base-font: 'Open Sans Condensed', sans-serif;
-    --base-color: #0b1a26;
+    --base-color: #aaaaaa;
     -webkit-print-color-adjust: exact;
 }
 
@@ -10,6 +13,7 @@
 html, body{
     margin:0px;
     padding:0px;
+    background-color: var(--background-color);
 }
 
 
@@ -42,12 +46,12 @@ a:link {
 }
 
 a:hover {
-    color: var(--base-color);
+    color: var(--title-color-30);
     text-decoration: none;
 }
 
 a:active {
-    color: var(--base-color);
+    color: var(--title-color-30);
     text-decoration: none;
 }
 
@@ -95,8 +99,8 @@ a:visited {
 }
 
 .highlight {
-    border: 1px solid #d99066;
-    background-color: rgba(217, 144, 102, 0.3);
+    border: 1px solid var(--title-color);
+    background-color: var(--title-color-30);
 }
 
 .row{
@@ -150,13 +154,13 @@ a:visited {
     left: 50%;
     transform: translate(-50%, -50%);
     border: 3px solid var(--title-color);
-    background-color: rgba(217, 144, 102, 0.3);
+    background-color: var(--background-color-30);
     color: var(--title-color);
     padding: 25px;
 }
 
 #article-byline {
-    background-color: rgba(217, 144, 102, 0.1);
+    background-color: var(--title-color-30);
 }
 
 /*
