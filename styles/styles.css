@@ -5,7 +5,7 @@
     --title-color: #ffffff;
     --title-color-30: rgba(255, 255, 255, 0.3);
     --base-font: 'Open Sans Condensed', sans-serif;
-    --base-color: #ffffff;
+    --base-color: #999999;
     -webkit-print-color-adjust: exact;
 }
 
