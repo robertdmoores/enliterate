@@ -1,5 +1,6 @@
 ﻿:root {
     --background-color: #000000;
+    --background-color-30: rgba(0, 0, 0, 0.3);
     --titling-font: 'Open Sans', sans-serif;
     --title-color: #ffffff;
     --title-color-30: rgba(255, 255, 255, 0.3);
@@ -45,12 +46,12 @@ a:link {
 }
 
 a:hover {
-    color: var(--base-color);
+    color: var(--title-color-30);
     text-decoration: none;
 }
 
 a:active {
-    color: var(--base-color);
+    color: var(--title-color-30);
     text-decoration: none;
 }
 
@@ -153,7 +154,7 @@ a:visited {
     left: 50%;
     transform: translate(-50%, -50%);
     border: 3px solid var(--title-color);
-    background-color: var(--title-color-30);
+    background-color: var(--background-color-30);
     color: var(--title-color);
     padding: 25px;
 }
