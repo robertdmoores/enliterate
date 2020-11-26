@@ -121,6 +121,7 @@ a:visited {
     position: relative;
     /*max-height: 600px;*/
     overflow: hidden;
+    padding:0px;
 }
 
 /*
