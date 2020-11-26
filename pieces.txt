@@ -1,0 +1,2 @@
+This is a collection of HTML components that can be copy-pasted into an Enliterate page. I'm saving them here simply for the sake of archiving.
+
