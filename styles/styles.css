@@ -1,8 +1,9 @@
 ﻿:root {
+     --background-color: #000000;
     --titling-font: 'Open Sans', sans-serif;
-    --title-color: #733f34;
+    --title-color: #ffffff;
     --base-font: 'Open Sans Condensed', sans-serif;
-    --base-color: #0b1a26;
+    --base-color: #404040;
     -webkit-print-color-adjust: exact;
 }
 
