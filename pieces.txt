@@ -57,3 +57,26 @@ This is a collection of HTML components that can be copy-pasted into an Enlitera
                     </div>
                 </section>
             </header>
+
+
+
+
+<section class="half-panel container">
+                <div class="row">
+                    <div class="col">
+                        <img class="img-vertical" src="images/wheat-001.jpg" alt="">
+                        <img class="img-vertical" src="images/wheat-002.jpg" alt="">
+                    </div>
+                </div>
+
+                <aside class="stretch-pad">
+                    <blockquote class="blockquote">
+                        <p class="mb-0 column-text">
+                            In it except to so temper mutual tastes mother. Interested cultivated its continuing now yet are.
+                            Out interested acceptance our partiality affronting unpleasant why add. Esteem garden men yet shy course.
+                            Consulted up my tolerably sometimes perpetual oh. Expression acceptance imprudence particular had eat
+                            unsatiable.
+                        </p>
+                    </blockquote>
+                </aside>
+            </section>
