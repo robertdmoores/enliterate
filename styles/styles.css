@@ -1,0 +1,399 @@
+﻿:root {
+    --titling-font: 'Open Sans', sans-serif;
+    --title-color: #733f34;
+    --base-font: 'Open Sans Condensed', sans-serif;
+    --base-color: #0b1a26;
+    -webkit-print-color-adjust: exact;
+}
+
+
+
+
+
+p, li {
+    font-family: var(--base-font);
+    color: var(--base-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+    font-family: var(--titling-font);
+    font-weight: bold;
+}
+
+
+
+blockquote {
+    border: none; /* specifically to override Bootstrap default */
+}
+
+
+a {
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+a:link {
+    color: var(--title-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--base-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--title-color);
+    text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/*
+    Use the panel class to wrap any grouping of elements which should be
+    kept together on the same page. In print format, the renderer will try
+    not to create a page break that separates them. Obviously, subject to
+    sizing. Don't wrap 14" worth of content and tell it not to page
+    break on an 11" page.
+*/
+.panel, .quarter-panel, .third-panel, .half-panel, .full-panel{
+    page-break-inside:avoid;
+}
+
+.stretch-pad{
+    margin-left:0px;
+    margin-right:0px;
+    padding: 20px 20px 0px 20px;
+}
+
+.column-text {
+    border-left: 3px solid var(--title-color);
+    padding-left: 20px;
+}
+
+.round-icon {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.highlight {
+    border: 1px solid #d99066;
+    background-color: rgba(217, 144, 102, 0.3);
+}
+
+.row{
+    padding-top:20px;
+}
+
+.bordered{
+    border:1px solid var(--base-color);
+}
+
+
+
+
+
+
+/*
+    Article cover is the container which holds both the cover photo and the
+    article title. It exists specifically to be a relative-position
+    wrapper so that the text can be placed absolute-position on top of the photo.
+*/
+#article-cover {
+    position: relative;
+    /*max-height: 600px;*/
+    overflow: hidden;
+}
+
+/*
+    This is the large photo that displays at the beginning of the article.
+    The title text is placed on top of it, and the byline appears
+    underneath it. In order to render everything in the right place,
+    it has to be wrapped in the relative-position article cover.
+*/
+#article-cover-photo{
+    max-width:100%;
+    height: auto;
+}
+
+/*
+    A wrapper for the title text that floats on top of the cover photo. 
+    In order to render in the right place on top of the photo, it has to be
+    absolute-position, and it has to be wrapped in the relative-position
+    article cover.
+
+    NOTE:
+    This is not the actual title text, it's the container.
+*/
+#article-cover-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid var(--title-color);
+    background-color: rgba(217, 144, 102, 0.3);
+    color: var(--title-color);
+    padding: 25px;
+}
+
+#article-byline {
+    background-color: rgba(217, 144, 102, 0.1);
+}
+
+/*
+    The actual text element of the title. As a matter of best practice,
+    this should be an <h1> and should be the only <h1> in the document.
+    Many other style decisions will assume this, but nothing enforces it.
+*/
+#article-title {
+    text-align: center;
+    font-weight: normal;
+}
+
+
+
+
+
+
+/* #1 Extra small devices (phones, 575px and down) */
+@media only screen and (max-width: 575px) {
+    p, li {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    .img-vertical {
+        height: auto;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    /*
+    The actual text element of the authorship byline, a <p> element contained
+    inside it.
+*/
+    #article-authorship p {
+        font-size: 14px;
+    }
+}
+
+/* #2 Small devices (portrait tablets and large phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+    p, li {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    .img-vertical {
+        height: auto;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    /*
+    The actual text element of the authorship byline, a <p> element contained
+    inside it.
+*/
+    #article-authorship p {
+        font-size: 14px;
+    }
+}
+
+/* #3 Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    p, li {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .img-vertical {
+        float: left;
+        height: auto;
+        width: 50%;
+    }
+
+    /*
+    The actual text element of the authorship byline, a <p> element contained
+    inside it.
+*/
+    #article-authorship p {
+        font-size: 18px;
+    }
+}
+
+/* #4 Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* #5 Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #article-cover {
+        position: relative;
+        max-height: 100vh;
+        overflow: hidden;
+    }
+}
+
+@page{
+    margin:0px;
+    padding:0px;
+}
+
+/* #6 Only when printing
+
+    IN PORTRAIT ORIENTATION:
+    1/4 HEIGHT = 2.62in
+    1/3 HEIGHT = 3.5in
+    1/2 HEIGHT = 5.25in
+    1/1 HEIGHT = 10.5in
+*/
+@media only print {
+    p, li {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .quarter-panel {
+        max-height:25vh;
+        overflow:hidden;
+    }
+    .third-panel {
+        max-height: 33vh;
+        overflow: hidden;
+    }
+    .half-panel {
+        max-height: 50vh;
+        overflow: hidden;
+    }
+    .full-panel {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+    .img-vertical {
+        float: left;
+        height: auto;
+        width: 50%;
+    }
+
+    /*
+    The actual text element of the authorship byline, a <p> element contained
+    inside it.
+*/
+    #article-authorship p {
+        font-size: 18px;
+    }
+
+    #article-cover {
+        position: relative;
+        max-height: 3.5in;
+        overflow: hidden;
+    }
+}
