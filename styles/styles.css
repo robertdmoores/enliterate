@@ -1,7 +1,8 @@
 ﻿:root {
-     --background-color: #000000;
+    --background-color: #000000;
     --titling-font: 'Open Sans', sans-serif;
     --title-color: #ffffff;
+    --title-color-30: rgba(255, 255, 255, 0.3);
     --base-font: 'Open Sans Condensed', sans-serif;
     --base-color: #404040;
     -webkit-print-color-adjust: exact;
@@ -11,7 +12,7 @@
 html, body{
     margin:0px;
     padding:0px;
-     background-color: var(--background-color);
+    background-color: var(--background-color);
 }
 
 
@@ -97,8 +98,8 @@ a:visited {
 }
 
 .highlight {
-    border: 1px solid #d99066;
-    background-color: rgba(217, 144, 102, 0.3);
+    border: 1px solid var(--title-color);
+    background-color: var(--title-color-30);
 }
 
 .row{
@@ -152,13 +153,13 @@ a:visited {
     left: 50%;
     transform: translate(-50%, -50%);
     border: 3px solid var(--title-color);
-    background-color: rgba(217, 144, 102, 0.3);
+    background-color: var(--title-color-30);
     color: var(--title-color);
     padding: 25px;
 }
 
 #article-byline {
-    background-color: rgba(217, 144, 102, 0.1);
+    background-color: var(--title-color-30);
 }
 
 /*
