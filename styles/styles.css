@@ -88,8 +88,10 @@ a:visited {
 }
 
 .column-text {
+    margin-left: 20px;
     border-left: 3px solid var(--title-color);
     padding-left: 20px;
+    max-width: 90%;
 }
 
 .round-icon {
@@ -303,6 +305,11 @@ a:visited {
         height: auto;
         width: 50%;
     }
+    
+    .column-text {
+        margin-left:0px;
+        max-width: 100%;
+}
 
     /*
     The actual text element of the authorship byline, a <p> element contained
@@ -390,7 +397,10 @@ a:visited {
         height: auto;
         width: 50%;
     }
-
+    .column-text {
+        margin-left:0px;
+        max-width: 100%;
+    }
     /*
     The actual text element of the authorship byline, a <p> element contained
     inside it.
@@ -401,7 +411,7 @@ a:visited {
 
     #article-cover {
         position: relative;
-        max-height: 3.5in;
+        max-height: 5in;
         overflow: hidden;
     }
 }
