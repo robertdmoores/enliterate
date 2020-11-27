@@ -397,7 +397,10 @@ a:visited {
         height: auto;
         width: 50%;
     }
-
+    .column-text {
+        margin-left:0px;
+        max-width: 100%;
+    }
     /*
     The actual text element of the authorship byline, a <p> element contained
     inside it.
