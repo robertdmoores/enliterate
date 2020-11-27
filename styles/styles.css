@@ -90,6 +90,7 @@ a:visited {
 .column-text {
     border-left: 3px solid var(--title-color);
     padding-left: 20px;
+    margin-left: 20px;
 }
 
 .round-icon {
@@ -303,6 +304,10 @@ a:visited {
         height: auto;
         width: 50%;
     }
+    
+    .column-text {
+    margin-left:0px;
+}
 
     /*
     The actual text element of the authorship byline, a <p> element contained
