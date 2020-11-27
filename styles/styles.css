@@ -411,7 +411,7 @@ a:visited {
 
     #article-cover {
         position: relative;
-        max-height: 3.5in;
+        max-height: 5in;
         overflow: hidden;
     }
 }
