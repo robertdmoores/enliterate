@@ -189,6 +189,10 @@ a:visited {
     padding:0px;
 }
 
+#article-summary{
+    padding-bottom:20px; /* balances out the .row class padding from Bootstrap */
+}
+
 
 
 
