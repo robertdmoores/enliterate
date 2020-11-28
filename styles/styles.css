@@ -4,6 +4,7 @@
     --titling-font: 'Open Sans', sans-serif;
     --title-color: #ffffff;
     --title-color-30: rgba(255, 255, 255, 0.3);
+    --title-color-10: rgba(255, 255, 255, 0.1);
     --base-font: 'Open Sans Condensed', sans-serif;
     --base-color: #aaaaaa;
     -webkit-print-color-adjust: exact;
@@ -105,8 +106,8 @@ a:visited {
 }
 
 .highlight {
-    border: 1px solid var(--title-color);
-    background-color: var(--title-color-30);
+    border: 1px solid var(--title-color-30);
+    background-color: var(--title-color-10);
 }
 
 .row{
