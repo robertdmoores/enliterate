@@ -30,8 +30,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ul, ol{
-    margin:0px;
-    padding: 0px;
+    margin-top:0px;
+    padding-top: 0px;
 }
 
 
@@ -168,7 +168,7 @@ a:visited {
 }
 
 #article-byline {
-    padding: 10px 10px 10px 20px;
+    padding: 10px 10px 0px 20px;
     border: none;
     border-left: 3px solid var(--title-color-30);
 }
