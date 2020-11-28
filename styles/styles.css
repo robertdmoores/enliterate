@@ -181,7 +181,10 @@ a:visited {
     text-align: center;
     font-weight: normal;
 }
-
+#article-authorship p{
+    margin:0px;
+    padding:0px;
+}
 
 
 
